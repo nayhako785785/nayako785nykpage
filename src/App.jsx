@@ -26,7 +26,7 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-unchi">
+      <p className="read-the-unchiunchi">
         Click on the Unchi and Unchi logos to learn more
       </p>
     </>
