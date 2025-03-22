@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/nayhako785785/nayako785nykpage.github.io",
+  "homepage": "https://nayhako785785.github.io/nayako785nykpage.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
