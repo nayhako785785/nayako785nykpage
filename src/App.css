@@ -12,9 +12,48 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #9e8d95aa);
 }
 .logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.logo1 {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo1:hover {
+  filter: drop-shadow(0 0 2em #940a46aa);
+}
+.logo1.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.logo2 {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo2:hover {
+  filter: drop-shadow(0 0 2em #290c94aa);
+}
+.logo2.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.logo3 {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo3:hover {
+  filter: drop-shadow(0 0 2em #089914aa);
+}
+.logo3.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 

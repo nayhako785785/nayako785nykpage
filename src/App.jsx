@@ -23,7 +23,7 @@ const card_music = (
           Compose music
         </Typography>
         <a href="https://youtube.com/channel/UC6uK8bFigWAA02OTIvYpXww?si=EnDFlKKmbq9ek7nL" target="_blank">
-          <img src={unchimusicLogo} className="logo" alt="unchimusic" />
+          <img src={unchimusicLogo} className="logo1" alt="unchimusic" />
         </a>
       </CardContent>
     </Box>
@@ -39,7 +39,7 @@ const card_draw = (
           draw picture 
         </Typography>
         <a href="https://www.pixiv.net/users/85787762" target="_blank">
-          <img src={unchipictLogo} className="logo" alt="unchipict" />
+          <img src={unchipictLogo} className="logo2" alt="unchipict" />
         </a>
       </CardContent>
     </Box>
@@ -54,7 +54,7 @@ const card_diary = (
           post diary 
         </Typography>
         <a href="https://x.com/ko757ka" target="_blank">
-          <img src={unchipostLogo} className="logo" alt="unchipict" />
+          <img src={unchipostLogo} className="logo3" alt="unchipict" />
         </a>
       </CardContent>
     </Box>

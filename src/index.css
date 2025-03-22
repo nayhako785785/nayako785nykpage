@@ -22,26 +22,6 @@ a:hover {
   color: #c4226d;
 }
 
-
-b {
-  font-weight: 500;
-  color: #292e81;
-  text-decoration: inherit;
-}
-b:hover {
-  color: #1d149c;
-}
-
-
-c {
-  font-weight: 500;
-  color: #292e81;
-  text-decoration: inherit;
-}
-c:hover {
-  color: #1e630d;
-}
-
 body {
   margin: 0;
   display: flex;
