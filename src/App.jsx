@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState } from 'react';
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
-import unchiLogo from '/shinningunchi.svg'
+import unchiLogo from '/shinningunchi.svg';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -9,27 +9,55 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import unchimusicLogo from '/unchi_music.svg';
+import unchipictLogo from '/unchi_picture.svg';
+import unchipostLogo from '/unchi_post.svg';
 import './App.css'
 
-const card = (
+const card_music = (
   <React.Fragment>
-    <CardContent>
-      <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-        This is card.
-      </Typography>
-      <Typography variant="h5" component="div">
-        Unchi
-      </Typography>
-      <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>secondary unchi</Typography>
-      <Typography variant="body2">
-        unchi
-        <br />
-        {'"unchi"'}
-      </Typography>
-    </CardContent>
-    <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions>
+    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+
+      <CardContent sx={{ flex: '1 0 auto' }}>
+        <Typography>
+          Compose music
+        </Typography>
+        <a href="https://youtube.com/channel/UC6uK8bFigWAA02OTIvYpXww?si=EnDFlKKmbq9ek7nL" target="_blank">
+          <img src={unchimusicLogo} className="logo" alt="unchimusic" />
+        </a>
+      </CardContent>
+    </Box>
+  </React.Fragment>
+);
+
+const card_draw = (
+  <React.Fragment>
+    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+
+      <CardContent sx={{ flex: '1 0 auto' }}>
+        <Typography>
+          draw picture 
+        </Typography>
+        <a href="https://www.pixiv.net/users/85787762" target="_blank">
+          <img src={unchipictLogo} className="logo" alt="unchipict" />
+        </a>
+      </CardContent>
+    </Box>
+  </React.Fragment>
+);
+const card_diary = (
+  <React.Fragment>
+    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+
+      <CardContent sx={{ flex: '1 0 auto' }}>
+        <Typography>
+          post diary 
+        </Typography>
+        <a href="https://x.com/ko757ka" target="_blank">
+          <img src={unchipostLogo} className="logo" alt="unchipict" />
+        </a>
+      </CardContent>
+    </Box>
   </React.Fragment>
 );
 
@@ -39,28 +67,20 @@ function App() {
   return (
     <>
       <h1>nayako785 homepage</h1>
-        <div>
-          <a href="https://vite.dev" target="_blank">
-            <img src={unchiLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={unchiLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
+        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+          <img src={unchiLogo} className="logo" alt="Vite logo" />
+          <Typography>
+            My name is nayako785. shinning poop.
+          </Typography>
 
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
-
-        <Box sx={{ minWidth: 275 }}>
-          <Card variant="outlined">{card}</Card>
         </Box>
 
-        <p className="read-the-unchi">
-          unchi is load.
-        </p>
+        <Box sx={{ minWidth: 100, display: 'flex', borderRadius: 1, flexDirection: 'row', margin: 2 }}>
+          <Card sx={{ display: 'flex' }}>{card_music}</Card>
+          <Card sx={{ display: 'flex' }}>{card_draw}</Card>
+          <Card sx={{ display: 'flex' }}>{card_diary}</Card>
+        </Box>
+
     </>
   )
 }

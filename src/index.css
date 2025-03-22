@@ -19,7 +19,27 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #f2539d;
+  color: #c4226d;
+}
+
+
+b {
+  font-weight: 500;
+  color: #292e81;
+  text-decoration: inherit;
+}
+b:hover {
+  color: #1d149c;
+}
+
+
+c {
+  font-weight: 500;
+  color: #292e81;
+  text-decoration: inherit;
+}
+c:hover {
+  color: #1e630d;
 }
 
 body {
@@ -60,7 +80,13 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #9b3e3e;
+  }
+  b:hover {
+    color: #673fc5;
+  }
+  c:hover {
+    color: #137734;
   }
   button {
     background-color: #f9f9f9;
