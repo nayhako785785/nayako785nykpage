@@ -83,9 +83,9 @@ function App() {
         </Box>
 
         <Box sx={{ minWidth: 100, display: 'flex', borderRadius: 1, flexDirection: 'row', margin: 2 }}>
-          <Card sx={{ display: 'flex' }}>{card_music}</Card>
-          <Card sx={{ display: 'flex' }}>{card_draw}</Card>
-          <Card sx={{ display: 'flex' }}>{card_diary}</Card>
+          <Card sx={{ display: 'flex', margin: 1 }}>{card_music}</Card>
+          <Card sx={{ display: 'flex', margin: 1 }}>{card_draw}</Card>
+          <Card sx={{ display: 'flex', margin: 1 }}>{card_diary}</Card>
         </Box>
 
     </>
