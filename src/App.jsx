@@ -67,12 +67,19 @@ function App() {
   return (
     <>
       <h1>nayako785 homepage</h1>
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
           <img src={unchiLogo} className="logo" alt="Vite logo" />
-          <Typography>
-            My name is nayako785. shinning poop.
-          </Typography>
-
+          <Box sx={{ display: 'flex', flexDirection: 'column'}}>
+            <Typography align='left' >
+              Hello! 
+            </Typography>
+            <Typography align='left'>
+              My name is nayako785. 
+            </Typography>
+            <Typography align='left'>
+              shinning poop.
+            </Typography>
+          </Box>
         </Box>
 
         <Box sx={{ minWidth: 100, display: 'flex', borderRadius: 1, flexDirection: 'row', margin: 2 }}>
