@@ -58,7 +58,7 @@ function App() {
           <Card variant="outlined">{card}</Card>
         </Box>
 
-        <p className="read-the-unchiunchiunchi">
+        <p className="read-the-unchi">
           unchi is load.
         </p>
     </>
