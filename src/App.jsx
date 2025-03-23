@@ -23,6 +23,9 @@ const card_music = (
         <Typography>
           Compose music
         </Typography>
+        <Typography>
+          (Youtube's link)
+        </Typography>
         <a href="https://youtube.com/channel/UC6uK8bFigWAA02OTIvYpXww?si=EnDFlKKmbq9ek7nL" target="_blank">
           <img src={unchimusicLogo} className="logo1" alt="unchimusic" />
         </a>
@@ -39,6 +42,9 @@ const card_draw = (
         <Typography>
           draw picture 
         </Typography>
+        <Typography>
+          (pixiv's link) 
+        </Typography>
         <a href="https://www.pixiv.net/users/85787762" target="_blank">
           <img src={unchipictLogo} className="logo2" alt="unchipict" />
         </a>
@@ -54,6 +60,9 @@ const card_diary = (
         <Typography>
           post diary 
         </Typography>
+        <Typography>
+          (X's link)
+        </Typography>
         <a href="https://x.com/ko757ka" target="_blank">
           <img src={unchipostLogo} className="logo3" alt="unchipict" />
         </a>
@@ -65,6 +74,7 @@ const card_diary = (
 function App() {
   const matches = useMediaQuery('(min-width:600px)');
   if (matches) {
+    //PC用
     return (
       <>
         <h1>nayako785 homepage</h1>
@@ -91,28 +101,29 @@ function App() {
       </>
     )
   } else {
+    //スマホ用
     return (
       <>
         <h1>nayako785 homepage</h1>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <img src={unchiLogo} className="logo" alt="Vite logo" />
             <Box sx={{ display: 'flex', flexDirection: 'column'}}>
-              <Typography align='left' >
+              <Typography align='center' >
                 Hello! {matches}
               </Typography>
-              <Typography align='left'>
+              <Typography align='center'>
                 My name is nayako785. 
               </Typography>
-              <Typography align='left'>
+              <Typography align='center'>
                 shinning poop.
               </Typography>
             </Box>
           </Box>
   
-          <Box sx={{ minWidth: 600, display: 'flex', borderRadius: 1, flexDirection: 'column', margin: 2 }}>
-            <Card sx={{ display: 'flex', margin: 1 }}>{card_music}</Card>
-            <Card sx={{ display: 'flex', margin: 1 }}>{card_draw}</Card>
-            <Card sx={{ display: 'flex', margin: 1 }}>{card_diary}</Card>
+          <Box sx={{ minWidth: 180, display: 'flex', borderRadius: 1, flexDirection: 'column', margin: 2 }}>
+            <Card sx={{ display: 'block', margin: 1 }}>{card_music}</Card>
+            <Card sx={{ display: 'block', margin: 1 }}>{card_draw}</Card>
+            <Card sx={{ display: 'block', margin: 1 }}>{card_diary}</Card>
           </Box>
       </>
     )
