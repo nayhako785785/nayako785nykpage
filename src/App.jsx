@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import unchimusicLogo from '/unchi_music.svg';
 import unchipictLogo from '/unchi_picture.svg';
 import unchipostLogo from '/unchi_post.svg';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import './App.css'
 
 const card_music = (
@@ -62,34 +63,61 @@ const card_diary = (
 );
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <h1>nayako785 homepage</h1>
-        <Box sx={{ display: 'flex', flexDirection: 'row' }}>
-          <img src={unchiLogo} className="logo" alt="Vite logo" />
-          <Box sx={{ display: 'flex', flexDirection: 'column'}}>
-            <Typography align='left' >
-              Hello! 
-            </Typography>
-            <Typography align='left'>
-              My name is nayako785. 
-            </Typography>
-            <Typography align='left'>
-              shinning poop.
-            </Typography>
+  const matches = useMediaQuery('(min-width:600px)');
+  if (matches) {
+    return (
+      <>
+        <h1>nayako785 homepage</h1>
+          <Box sx={{ display: 'flex', flexDirection: 'row' }}>
+            <img src={unchiLogo} className="logo" alt="Vite logo" />
+            <Box sx={{ display: 'flex', flexDirection: 'column'}}>
+              <Typography align='left' >
+                Hello! {matches}
+              </Typography>
+              <Typography align='left'>
+                My name is nayako785. 
+              </Typography>
+              <Typography align='left'>
+                shinning poop.
+              </Typography>
+            </Box>
           </Box>
-        </Box>
+  
+          <Box sx={{ minWidth: 600, display: 'flex', borderRadius: 1, flexDirection: 'row', margin: 2 }}>
+            <Card sx={{ display: 'flex', margin: 1 }}>{card_music}</Card>
+            <Card sx={{ display: 'flex', margin: 1 }}>{card_draw}</Card>
+            <Card sx={{ display: 'flex', margin: 1 }}>{card_diary}</Card>
+          </Box>
+      </>
+    )
+  } else {
+    return (
+      <>
+        <h1>nayako785 homepage</h1>
+          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+            <img src={unchiLogo} className="logo" alt="Vite logo" />
+            <Box sx={{ display: 'flex', flexDirection: 'column'}}>
+              <Typography align='left' >
+                Hello! {matches}
+              </Typography>
+              <Typography align='left'>
+                My name is nayako785. 
+              </Typography>
+              <Typography align='left'>
+                shinning poop.
+              </Typography>
+            </Box>
+          </Box>
+  
+          <Box sx={{ minWidth: 600, display: 'flex', borderRadius: 1, flexDirection: 'column', margin: 2 }}>
+            <Card sx={{ display: 'flex', margin: 1 }}>{card_music}</Card>
+            <Card sx={{ display: 'flex', margin: 1 }}>{card_draw}</Card>
+            <Card sx={{ display: 'flex', margin: 1 }}>{card_diary}</Card>
+          </Box>
+      </>
+    )
+  }
 
-        <Box sx={{ minWidth: 100, display: 'flex', borderRadius: 1, flexDirection: 'row', margin: 2 }}>
-          <Card sx={{ display: 'flex', margin: 1 }}>{card_music}</Card>
-          <Card sx={{ display: 'flex', margin: 1 }}>{card_draw}</Card>
-          <Card sx={{ display: 'flex', margin: 1 }}>{card_diary}</Card>
-        </Box>
-
-    </>
-  )
 }
 
 export default App
